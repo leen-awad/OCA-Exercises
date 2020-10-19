@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body><h1>Enter Students Marks</h1>
+    
+    <input type="text" id="fName" placeholder="Enter your name"><br>
+    <input type="text" id="M1" placeholder="Enter math Marks"><br>
+    <input type="text" id="M2" placeholder="Enter English Marks"><br>
+    <input type="text" id="M3" placeholder="Enter Arabic Marks"><br>
+    <input type="text" id="M4" placeholder="Enter Bio Marks"><br>
+    <input type="text" id="M5" placeholder="Enter computer Marks"><br>
+    <input type="text" id="M6" placeholder="Enter Religion Marks"><br>
+  
+    <input type="submit" onclick="submit_marks()">
+  
+    <div id="Average"></div>
+    <script >
+      function submit_marks() {
+
+      var sub1 = parseInt(document.getElementById('M1').value);
+      var sub2 = parseInt(document.getElementById('M2').value);
+      var sub3 = parseInt(document.getElementById('M3').value);
+      var sub4 = parseInt(document.getElementById('M4').value);
+      var sub5 = parseInt(document.getElementById('M5').value);
+      var sub6 = parseInt(document.getElementById('M6').value);
+      var total = sub1+sub2+sub3+sub4+sub5+sub6;
+      var devid  = total/6;
+      var result;
+      if (devid>=50 && devid<=60) {
+        result = 'Pass';
+      } 
+      
+      else if(devid>60 && devid<=70){
+        result = 'Average';
+      }
+      
+      else if(devid>70 && devid<=80){
+        result = 'good';
+      }
+      
+      else if(devid>80 && devid<=90){
+        result = 'very good';
+      }
+      
+      else if(devid>90 && devidr<=100){
+        result = 'Excellent';
+      }
+      
+      else{
+        result = "Pleas try again";
+      }
+      
+
+      document.getElementById("Average").innerHTML = "Your Total Marks : "+total+"<br>Your average : "+devid+"<br>Your Grade : "+result;
+      
+      }
+      </script>
+  </body>
+</html>
+
+ 
