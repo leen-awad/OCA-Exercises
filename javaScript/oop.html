@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //class #1
+class Person {
+
+  constructor(name,age) { 
+      this.name = name;
+      this.age = age;
+   }
+  walk() { 
+      console.log("steps.." );
+   }
+  talk() { 
+      console.log("Hello, my name is " + this.name);
+   }
+   printObject(){
+       console.log("The Contents of Object are: name:" +this.name +", age:"+ this.age);
+   }
+}
+class Student extends Person{
+    constructor(name, age, gpa){
+        super(name, age);
+        this.gpa = gpa;
+    }
+    showGPA() {
+            console.log("My GPA is " + this.gpa);
+        }
+    printObject(){
+       console.log("The Contents of Object are: name: " +this.name +", age:"+ this.age+", gpa:"+ this.gpa);
+   }
+}
+   
+    var person1 = new Person("Omar",16);
+    var person2 = new Person("Mahammad",30);
+    var studant1 = new Student("Jaber", 18, 95);
+
+
+
+
+
+
+
+
+//class #2
+
+    class Currency{
+        constructor(){
+            var value = value;
+            var color = color;
+        }
+        setValue(value){
+            this.value = value;
+        }
+        getValue(){
+            return this.value;
+        }
+        setColor(color){
+            this.color = color;
+        }
+        getColor(){
+            return this.color;
+        }
+
+    }
+var coin5 = new Currency();
+coin5.setValue(5);
+coin5.setColor("red");
+
+var coin10 = new Currency();
+coin10.setValue(10);
+coin5.setColor("blue");
+
+function printCoin(coinParam){
+    console.log("I have currency of value: "+ coinParam.getValue() + ", and color: " + coinParam.getColor());
+    console.log("I have currency of value: "+ coinParam.getValue() + ", and color: " + coinParam.getColor());
+}
+printCoin(coin5);
+printCoin(coin10);
+
+
+
+
+
+
+//class #3
+
+class Car {
+
+constructor(brand,color) { 
+    this.brand = brand;
+    this.color = color;
+ }
+
+
+ printObject2(){
+     console.log("the car brand:" +this.brand +", color:"+ this.color);
+ }
+}
+var car1 = new Car("toyota","red");
+    var car2 = new Car("kia","blue");
+
+    </script>
+</body>
+</html>
