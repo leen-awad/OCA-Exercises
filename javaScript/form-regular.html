@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 1px solid gray;
+            width: 800px;
+            background-color: rgb(13, 80, 13);
+            margin-top: 250px;
+            margin-left: 500px;
+            border-radius: 20px;
+        
+        }
+
+
+input[type='text']
+{
+   
+    margin-top: 20px;
+  padding:10px;
+  font-size:2em;
+  border-radius: 25px;
+  width: 700px;
+  margin-left: 40px;
+}
+
+input[type='submit']
+{
+  background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 500px;
+}
+input#fullName {
+    background-image: url('unnamed.png');
+    background-size:8%;
+    background-repeat: no-repeat;
+    text-indent: 60px;
+}
+input#fullName:focus {
+    background-image:none;
+    text-indent:0px
+    }
+    input#email {
+    background-image: url('34-345999_email-button-grey-email-icon-png.png');
+    background-size:8%;
+    background-repeat: no-repeat;
+    text-indent: 60px;
+}
+input#email:focus {
+    background-image:none;
+    text-indent:0px
+    }
+    input#phone-number {
+    background-image: url('phone-grey-md.png');
+    background-size:8%;
+    background-repeat: no-repeat;
+    text-indent: 60px;
+}
+input#phone-number:focus {
+    background-image:none;
+    text-indent:0px
+    }
+    input#passward {
+    background-image: url('kisspng-computer-icons-lock-multi-factor-authentication-fo-key-5acee064e6fdc4.3148491015235073009462.jpg');
+    background-size:8%;
+    background-repeat: no-repeat;
+    text-indent: 60px;
+}
+input#passward:focus {
+    background-image:none;
+    text-indent:0px
+    }
+    
+    </style>
+</head>
+<body>
+    <form name="alphavalidate" action="form_process.php"
+  method="post" onSubmit="return check_Alpha(this)" >
+        <p>
+        <input type="text"id="fullName" placeholder="user name" /> 
+        </p><p>
+        <input type="text" id="email" placeholder= "enter your email"  />
+        </p>
+        <p>
+            <input type="text" id="phone-number" placeholder="phone number" />
+            </p>
+            <p>
+                <input type="text" id="passward" placeholder="passward" />
+                </p>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1" style="color: white;"> I agree to the privesy policy</label>
+        <p>
+        <input type="submit" value="creat your acount"/>
+         </p>
+      </form>
+      <script>
+        function check_Alpha(letters){
+          var regex = /^[a-zA-Z]+$/;
+          if(regex.test(letters.fullName.value) == false){
+         alert("Name must be in alphabets only");
+         letters.fullName.focus();
+         return false;
+          }
+          if(letters.fullName.value == " "){
+            alert("Name Field cannot be left empty");
+            letters.fullName.focus();
+            return false;
+          }
+          return true;
+        }
+
+
+
+        
+
+
+</script> -->
+</body>
+</html>
