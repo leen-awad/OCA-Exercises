@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  * {
+    box-sizing: border-box;
+   
+  }
+  .contanor1 {
+    display: grid;
+    
+    grid-template-columns: auto auto auto ;
+    grid-gap: 1rem;
+
+    height: 25rem;
+    text-align: center;
+  }
+  .item {
+    background: chartreuse;
+
+    
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+
+  }
+  .item:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: teal;
+  }
+  .item:nth-child(6){
+      grid-column:1 /span 2;
+      background-color: tomato;
+  }
+
+  .contanor2{
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1rem;
+    height: 10rem;
+    
+
+  }
+  .contant {
+    background-color: violet;;
+
+    
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-top: 20px;
+text-align: center;
+  }
+  footer {
+    background: pink;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    height: 5rem;
+  }
+  header{
+    background: pink;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    height: 5rem;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="live code 2.css">
+</head>
+<body>
+  <header style="width: 100%;background-color: brown;"></header>
+
+  <div class="contanor1">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+  </div>
+  <div class="contanor2">
+    <div class="contant">10</div>
+    <div class="contant">11</div>
+    <div class="contant">12</div>
+    <div class="contant">13</div>
+    </div>
+    <footer style="width: 100%;background-color: brown;"></footer>
+</body>
+</html>

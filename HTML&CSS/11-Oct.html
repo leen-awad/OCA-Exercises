@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+
+scroll-behavior: smooth;
+}
+
+body{
+
+background-color: rgb(255, 185, 197);
+box-sizing: border-box;
+
+}
+
+.container {
+
+display: grid;
+grid-template-areas:
+
+    "page1"
+    "page-2"
+    "page-3"
+
+     ;
+grid-gap: 0.75rm;
+}
+
+
+.first-text{
+font-size: 60px;
+font-weight: bolder;
+color:red;
+}
+
+.page1{
+    background-image:linear-gradient(to right, rgb(231, 183, 238), rgb(253, 47, 32));
+    height: 600px;
+    width: 80%;
+ margin-left: 120px;
+    margin-top: 110px;
+    display: flex;
+    grid-area: "page1";
+    border-radius: 25px;
+   
+}
+.page1> div{
+
+margin-left: 200px;
+
+
+}
+
+#page-2{
+    background-image:linear-gradient(to right, rgb(231, 183, 238), rgb(253, 47, 32));
+    height: 600px;
+    width: 80%;
+    margin-left: 120px;
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+     grid-gap: 2px;
+     grid-area: "page-2";
+     border-radius: 25px;
+}
+#page-2> div{
+padding-top: 30px;
+padding-left: 50px;
+
+
+
+}
+
+#page-3{
+    background-image:linear-gradient(to right, rgb(231, 183, 238), rgb(253, 47, 32));
+    height: 600px;
+    width: 80%;
+    margin-left: 120px;
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+     grid-gap: 2px;
+     grid-area: "page-3";
+     border-radius: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 150px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid rgb(94, 7, 89);
+    background-color: rgb(175, 15, 167);
+
+    border-radius: 25px;
+    margin-left: 20px;
+    display: inline;
+
+}
+
+li a {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.nav-item{
+height: 30px;
+width: 100px;
+
+
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light" ;">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#page-2"
+                            style="color: white;">my album</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#page-3" style="color: white; ">about me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="page1">
+    <div class="first-text"><h1 style="font-weight: bolder;">Hello, <br>I am clefairy</h1></div>
+    <div><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da4c8018-fd02-405a-aa3d-9ed90468efed/db1eu6g-b8e37c1d-7b62-478d-9a04-77fd44f3f9d4.png/v1/fill/w_585,h_565,strp/_035___clefairy_by_briannabellerose_db1eu6g-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01NjUiLCJwYXRoIjoiXC9mXC9kYTRjODAxOC1mZDAyLTQwNWEtYWEzZC05ZWQ5MDQ2OGVmZWRcL2RiMWV1NmctYjhlMzdjMWQtN2I2Mi00NzhkLTlhMDQtNzdmZDQ0ZjNmOWQ0LnBuZyIsIndpZHRoIjoiPD01ODUifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.T36s8jOqtqHgLxe1oLKWku6XTlx5h2RPCmoNU2U-Cno" style="margin-top: 60px;margin-right: 50px;"></div>
+</div>
+<div id="page-2">
+    
+        
+            <div><img class="img3" src="images (3).jpg" style="height: 200px;width: 350px;"/>
+                      </div>
+            <div>
+                <h1 style="font-weight: bolder;font-size: 40px;color: white;font-style: italic;font-size: 80px;">My
+                   album</h1>
+            </div>
+            <div><img class="img3" src="images (5).jpg" style="height: 200px;width: 350px;"/>
+            </div>
+            <div><img class="img3" src="images (7).jpg" style="height: 200px;width: 350px;" /></div>
+            <div><img class="img3" src="unnamed.jpg" style="height: 200px;width: 350px;" /></div>
+            <div><img class="img3" src="clefairy.png" style="height: 200px; width: 350px;" /></div>
+            
+           
+           
+        
+    </div>
+    <div id="page-3">
+    
+        
+        <div class="firstParagraph" style="overflow: hidden;">
+            <h1 style="text-align: center;font-size: 40px;font-weight: bolder;color: rgb(115, 2, 180);">About me</h1>
+            <p style="font-size: 40px;margin-left: 10px;color: rgb(92, 5, 95); ">A peculiar group of Clefairy debuted in Clefairy Tales. Ash and his friends first encountered them after their spacecraft crash-landed near Viridian City. The Clefairy resorted to stealing items, including Jigglypuff's signature microphone marker and even Pikachu, from a nearby town to rebuild their spaceship.
+
+                The group, accompanied by Oswald and Jigglypuff, tracked the Clefairy to an underground cave and stormed the spaceship to recover Jigglypuff's microphone and Pikachu. Though Jigglypuff ended up defeating all of the Clefairy with Pound, the spacecraft still took off because of its preset launch, though Ash, his friends, and Jigglypuff escaped in time.</p>
+        </div>
+        
+       
+       
+    
+</div>
+
+</div>
+
+</body>
+</html>
