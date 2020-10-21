@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        //class #1
+class Person {
+  constructor(name,age,ID) { 
+      this.name = name;
+      this.age = age;
+      this.ID=ID;
+   }
+  walk() { 
+      console.log("steps.." );
+   }
+  talk() { 
+      console.log("Hello, my name is " + this.name);
+   }
+   Greating(){
+       console.log("hello my nameis:" +this.name +", age:"+ this.age + ", my id:"+this.ID);
+   }
+}
+class Student extends Person{
+    constructor(name, age, gpa){
+        super(name, age);
+        this.gpa = gpa;
+    }
+    showGPA() {
+            console.log("My GPA is " + this.gpa);
+        }
+    printObject(){
+       console.log("The Contents of Object are: name: " +this.name +", age:"+ this.age+", gpa:"+ this.gpa);
+   }
+}
+    var person1 = new Person("Omar",16);
+    var person2 = new Person("Mahammad",30);
+    var studant1 = new Student("Jaber", 18, 95);
+
+
+
+
+
+
+//class #2
+    class Currency{
+        constructor(){
+            var id = id;
+            var type = type;
+            var year=year;
+        }
+        setId(id){
+            this.id = id;
+        }
+        getId(id){
+            return this.id;
+        }
+        setType(type){
+            this.type = type;
+        }
+        getType(type){
+            return this.type;
+        }
+
+        setYear(year){
+            this.year = year;
+        }
+        getYear(year){
+            return this.year;
+        }
+    }
+var car5 = new Currency();
+car5.setId(12223221);
+car5.setType("toyota");
+car5.setYear(2020);
+var car6 = new Currency();
+car6.setId(12223228);
+car6.setType("toyota");
+car6.setYear(2021);
+function printCoin(carParam){
+    console.log("I have car of id "+ carParam.getId() + ", and color: " + carParam.getType() +" ,and year"+carParam.getYear());
+}
+printCoin(car5);
+printCoin(car6);
+
+
+
+
+
+
+
+//class #3
+class anemal {
+constructor(name,ID,pet,notPet) { 
+    this.name = name;
+      this.ID=ID;
+      this. pet = pet;
+     this.notPet=notPet;
+
+ }
+ 
+
+ someFunction(){
+    if(pet === true){
+        console.log("the animal name:" +this.name  +", id:"+ this.ID+" ,it"+pet);
+    }
+    else{
+        console.log("the animal name:" +this.name  +", id:"+ this.IDS+" ,it is"+notPet);  
+    }
+}
+ 
+     
+     
+ 
+ 
+}
+var animal1 = new anemal("laion","5",true);
+    var animal2 = new anemal("cat","8",false);
+
+
+
+
+    
+var care7;
+car7 = (Id,type,year) => "Hello " + Id +type +year ;
+
+document.getElementById("demo").innerHTML = car7("252136541"+" toyota"+"2020");
+    </script>
+</body>
+</html>
